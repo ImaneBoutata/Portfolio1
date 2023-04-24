@@ -34,6 +34,7 @@ function App() {
    <Dashboard />
 
     <Routes> 
+        <Route exact path="/" element={<Accueil />}></Route>
         <Route exact path="/accueil" element={<Accueil />}></Route>
         <Route exact path="/formations" element={<Formation />}></Route>
         <Route exact path="/stages" element={<Stage />}></Route>
