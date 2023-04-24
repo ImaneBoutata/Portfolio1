@@ -5,89 +5,109 @@ import Footer from './Footer';
 
 function Competences() {
     return (
-        <div>
-             <Splitter style={{ height: '300px', marginTop:'40px' }}>
-            <SplitterPanel className="flex align-items-center justify-content-center">
-        
-        <div style={{ flexDirection: 'column', alignItems: 'flex-start', marginTop:'20px' }}>
+        <div className='container-fluid'>
+            <div className='row'>
+            <Splitter style={{ height: '300px', marginTop: '40px' }}>
+                <SplitterPanel className=" align-items-center justify-content-center container-fluid">
+                    <div  style={{ flexDirection: 'column', alignItems: 'flex-start', marginTop: '20px' }}>
+
+                        <div className='row justify-content-center ' style={{  flexDirection: 'row', alignItems: 'center' }}>
+                            <div className='col-md-6'>
+                            <h4 >HTML/CSS</h4>
+
+                            </div>
+                            <div className="card col-md-6" >
+                                <ProgressBar value={50} style={{ boxShadow: '5px 5px 5px rgba(0,0,0,0.3)', margin: '10px' }}></ProgressBar>
+                            </div>
+                        </div>
+
+                        <div  className='row justify-content-center ' style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                            <div className='col-md-6'>
+                            <h4>REACT</h4>
+
+                            </div>
+                            <div className="card col-md-6" >
+                                <ProgressBar value={80} style={{ boxShadow: '5px 5px 5px rgba(0,0,0,0.3)', margin: '10px' }} ></ProgressBar>
+                            </div>
+                        </div>
+
+                        <div className='row justify-content-center' style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                            <div className='col-md-6'>
+                            <h4 >ANGULAR</h4>
+                            </div>
+                            <div className="card col-md-6" >
+                                <ProgressBar value={70} style={{ boxShadow: '5px 5px 5px rgba(0,0,0,0.3)', margin: '10px' }}></ProgressBar>
+                            </div>
+                        </div>
+
+                        <div className='row justify-content-center'  style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                            <div className='col-md-6'>
+                            <h4 >JAVASRIPT</h4>
+
+                            </div>
+                            <div className="card col-md-6">
+                                <ProgressBar value={70} style={{ boxShadow: '5px 5px 5px rgba(0,0,0,0.3)', margin: '10px' }}></ProgressBar>
+                            </div>
+                        </div>
+                    </div>
 
 
+                </SplitterPanel>
+                
 
+                <SplitterPanel className="flex align-items-center justify-content-center container-fluid">
+                    <div className='row justify-content-center ' style={{ flexDirection: 'column', alignItems: 'flex-start', marginTop: '20px' }}>
 
+                        <div className='row justify-content-center'  style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                            <div className='col-md-6'>
+                            <h4  >PYTHON</h4>
+                            </div>
+                            
+                            <div className="card col-md-6" >
+                                <ProgressBar value={50} style={{ boxShadow: '5px 5px 5px rgba(0,0,0,0.3)', margin: '10px' }}></ProgressBar>
+                            </div>
+                        </div>
 
+                        <div className='row justify-content-center'  style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                            <div className='col-md-6'>
+                            <h4 >JEE</h4>
 
+                            </div>
+                            <div className="card col-md-6"  >
+                                <ProgressBar value={80} style={{ boxShadow: '5px 5px 5px rgba(0,0,0,0.3)', margin: '10px' }} ></ProgressBar>
+                            </div>
+                        </div>
 
+                        <div className='row justify-content-center'  style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                            <div  className='col-md-6'>
+                            <h4 >JAVA</h4>
 
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-                <h4 style={{ marginLeft:'80px'}} >HTML/CSS</h4>
-                <div className="card" style={{ width: '55%', marginLeft:'30px'}}>
-                    <ProgressBar value={50} style={{ boxShadow: '5px 5px 5px rgba(0,0,0,0.3)', margin: '10px' }}></ProgressBar>
-                </div>
+                            </div>
+                            <div className="card col-md-6" >
+                                <ProgressBar value={70} style={{ boxShadow: '5px 5px 5px rgba(0,0,0,0.3)', margin: '10px' }}></ProgressBar>
+                            </div>
+                        </div>
+
+                        <div className='row justify-content-center'  style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                            <div className='col-md-6'>
+                            <h4>C#</h4>
+
+                            </div>
+                            <div className="card col-md-6" >
+                                <ProgressBar value={70} style={{ boxShadow: '5px 5px 5px rgba(0,0,0,0.3)', margin: '10px' }}></ProgressBar>
+                            </div>
+                        </div>
+                    </div>
+
+                </SplitterPanel>
+            </Splitter>
+            </div>
+            <div className='row mt-5'>
+
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-                <h4 style={{ marginLeft:'80px'}}>REACT</h4>
-                <div className="card" style={{ width: '55%', marginLeft:'30px'}} >
-                    <ProgressBar value={80} style={{ boxShadow: '5px 5px 5px rgba(0,0,0,0.3)' , margin: '10px'}} ></ProgressBar>
-                </div>
-            </div>
+            <Footer />
 
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-                <h4 style={{ marginLeft:'80px'}}>ANGULAR</h4>
-                <div className="card" style={{ width: '55%' , marginLeft:'30px'}}>
-                    <ProgressBar value={70} style={{ boxShadow: '5px 5px 5px rgba(0,0,0,0.3)', margin: '10px' }}></ProgressBar>
-                </div>
-            </div>
-
-            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-                <h4 style={{ marginLeft:'80px'}}>JAVASRIPT</h4>
-                <div className="card" style={{ width: '55%' , marginLeft:'30px'}}>
-                    <ProgressBar value={70} style={{ boxShadow: '5px 5px 5px rgba(0,0,0,0.3)', margin: '10px' }}></ProgressBar>
-                </div>
-            </div>
-            </div>
-
-            
-            </SplitterPanel>
-
-            <SplitterPanel className="flex align-items-center justify-content-center">
-            <div style={{ flexDirection: 'column', alignItems: 'flex-start', marginTop:'20px' }}>
-
-<div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-    <h4 style={{ marginLeft:'80px'}} >PYTHON</h4>
-    <div className="card" style={{ width: '55%', marginLeft:'30px'}}>
-        <ProgressBar value={50} style={{ boxShadow: '5px 5px 5px rgba(0,0,0,0.3)', margin: '10px' }}></ProgressBar>
-    </div>
-</div>
-
-<div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-    <h4 style={{ marginLeft:'80px'}}>JEE</h4>
-    <div className="card" style={{ width: '55%', marginLeft:'30px'}} >
-        <ProgressBar value={80} style={{ boxShadow: '5px 5px 5px rgba(0,0,0,0.3)' , margin: '10px'}} ></ProgressBar>
-    </div>
-</div>
-
-<div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-    <h4 style={{ marginLeft:'80px'}}>JAVA</h4>
-    <div className="card" style={{ width: '55%' , marginLeft:'30px'}}>
-        <ProgressBar value={70} style={{ boxShadow: '5px 5px 5px rgba(0,0,0,0.3)', margin: '10px' }}></ProgressBar>
-    </div>
-</div>
-
-<div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-    <h4 style={{ marginLeft:'80px'}}>C#</h4>
-    <div className="card" style={{ width: '55%' , marginLeft:'30px'}}>
-        <ProgressBar value={70} style={{ boxShadow: '5px 5px 5px rgba(0,0,0,0.3)', margin: '10px' }}></ProgressBar>
-    </div>
-</div>
-</div>
-            
-            </SplitterPanel>
-        </Splitter>
-  
-
-        <Footer />
-        
         </div>
     )
 }

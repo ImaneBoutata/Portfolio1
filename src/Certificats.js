@@ -14,7 +14,7 @@ import Footer from './Footer';
 function Certificats() {
 
     return (
-        <div>
+        <div className='container-fluid'>
         <div style={{ margin:'20px', marginLeft:'10px',  marginRight:'10px', display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)' , justifyContent: 'center', alignItems: 'center'}}>
         <div className="card" style={{ margin:'20px' , justifyContent:'center'}}>
             <Card title="DevOps,Cloud, and Agile Foundations">
@@ -66,7 +66,7 @@ function Certificats() {
         </div>
 
         </div>
-        <Footer />
+                <Footer />
 
         </div>
     )

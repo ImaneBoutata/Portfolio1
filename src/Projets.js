@@ -5,7 +5,7 @@ import Footer from './Footer';
 function Projets(){
 
     return (
-        <div>
+        <div className='container-fluid'>
 
         <div className="card">
             <Accordion activeIndex={0}>

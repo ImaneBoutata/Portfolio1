@@ -23,7 +23,7 @@ function Footer() {
     }
   ];
   return (
-    <div>
+    <div className='container-fluid'>
 
       <Menubar model={items} style={{ background: '#6495ED', justifyContent: 'center' }} >
 
